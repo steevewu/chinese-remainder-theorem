@@ -7,12 +7,10 @@ Let $\set{n_1, n_2, ..., n_k}$ be integers greater than 1 (called as _moduli_ or
 If the $n_i$ are pairwise coprime, and if $\set{a_1, a_2, ..., a_k}$ are integers such that $0 \leq a_i \lt n_i$, then the system
 
 $$
-
 x \equiv a_1 \mod{n_1} \\\\
 x \equiv a_2 \mod{n_2} \\\\
 \vdots \\\\
 x \equiv a_k \mod{n_k}
-
 $$
 
 has a unique solution, and any two solutions, say $x_1$ and $x_2$, are congruent modulo $N$, that is $x_1 \equiv x_2 \mod{N}$.
