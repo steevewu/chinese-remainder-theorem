@@ -18,7 +18,7 @@ def __congruence(eq1: tuple[int,...], eq2: tuple[int,...]) -> tuple[int,...]:
         '''
         in case of non-coprime
         '''
-        assert (a1 % g == a2), "Solution does not exist!!"
+        assert ((a1 - a2) % g == 0), "Solution does not exist!!"
         p, q = ext_gcd(n1//g, n2//g)
         lcm = (n1 * n2) // g
         return (a1 * q * (n2//g) + a2 * p * (n1//g) % lcm, lcm)
