@@ -7,14 +7,20 @@ Let $\set{n_1, n_2, ..., n_k}$ be integers greater than 1 (called as _moduli_ or
 If the $n_i$ are pairwise coprime, and if $\set{a_1, a_2, ..., a_k}$ are integers such that $0 \leq a_i \lt n_i$, then the system
 
 $$
-x \equiv a_1 \mod{n_1} \\\\
-x \equiv a_2 \mod{n_2} \\\\
-\vdots \\\\
-x \equiv a_k \mod{n_k}
+x \equiv a_1 \mod{n_1} \\ x \equiv a_2 \mod{n_2} \\ \vdots \\ x \equiv a_k \mod{n_k}
 $$
 
 has a unique solution, and any two solutions, say $x_1$ and $x_2$, are congruent modulo $N$, that is $x_1 \equiv x_2 \mod{N}$.
 
+
+## Non-coprime moduli
+The Chinese remainder theorem can be generalized to _non-coprime_ moduli. Let $n_1, n_2$ be any integers, let $g = \gcd(n_1, n_2)$ and $M = lcm(n_1, n_2)$, and consider the system of congruences:
+
+$$
+x \equiv a_1 \mod{n_1} \\ x \equiv a_2 \mod{n_2}
+$$
+
+This system has a unique solution modulo $M$ if only $a_1 \equiv a_2 \mod{g}$. Otherwise, it has no solutions. See [^2].
 
 ## Examples
 Congruence equations:   
@@ -35,3 +41,10 @@ moduli: 3 5 7
 ```
 
 >Note: the remainders and moduli are separated by single space, the result is returned as (x, N)
+
+
+
+
+
+[^1]: Wikipedia, Chinese remainder theorem. [See here](https://en.wikipedia.org/wiki/Chinese_remainder_theorem).
+[^2]: Forthright48, Chinese remainder theorem - Non coprime moduli. [See here.](https://forthright48.com/chinese-remainder-theorem-part-2-non-coprime-moduli/)
